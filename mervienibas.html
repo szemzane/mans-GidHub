@@ -1,0 +1,29 @@
+
+
+<html>
+    
+    <style>
+body {
+  background-image: url('https://ams03pap001files.storage.live.com/y4mLZ8IWVAYlhFddQzbidzvWYi_BP6s8BbCJovZos4QCTL7DGWoo8TFigBElgOjEA0-6jU_vYpSPpJ3BQooLCBmdV1kPpzh3dg6L7nu0G3ikNtO8QbxdvwB2RUnqnY8dT3TKaYOyIWK1d8sw6lRvv4SQif7TGi8slwiVjHdYtLW7o-TIJTKgpaX6IR9YaEG_6tR6SW8VOxJwex96c4rMMHXyA?encodeFailures=1&width=159&height=169');
+}
+</style>
+
+
+    <head>
+        <title>FORMAS</title>
+    <h1>Informācijas daudzuma mērvienības</h1>
+    </head>
+    <body>
+      
+        <header style='background-color: #98F8A2;
+               padding: 10px;'> <form> 
+            <label for="gbInput">GB:</label> 
+            <input type="number" id="gbInput" name="gbInput" step="0.01" required> 
+            <input type="submit" value="Convert"> </form> <div id="result"></div> 
+            <script>
+        
+        document.querySelector('form').addEventListener('submit', function(e) { e.preventDefault(); 
+            let gb = parseFloat(document.getElementById('gbInput').value); let mb = gb * 1024; let mib = gb * 1000 / 1024; document.getElementById('result').innerHTML = `${gb} GB is equal to ${mb} MB (${mib} MiB)`; }); </script> 
+    </body>
+     </html>
+        
